@@ -3,4 +3,6 @@ export function manageFriends(state, action){
     case('ADD_FRIEND'):
     return {...state, action.friend}
   }
+  default:
+  return state
 }
