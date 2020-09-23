@@ -7,7 +7,7 @@ export function manageFriends(state, action){
     switch(action.type){
       case('REMOVE_FRIEND'):
       let newFriends = state.friends.slice()
-      newFriends.filter((friend) => friend.id !== action.id )
+      newFriends.filter((friend) => friend.id !== action.id)
     }
   default:
     return state
