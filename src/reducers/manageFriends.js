@@ -8,7 +8,6 @@ export function manageFriends(state, action){
     case('REMOVE_FRIEND'):
     let foo = state.friends.slice()
     foo = foo.filter((friend) => friend.id !== action.id)
-    console.log(foo)
     return {...state, friends: foo};
   default:
     return state
