@@ -3,7 +3,7 @@ export function manageFriends(state, action){
     case('ADD_FRIEND'):
     console.log(action.friend)
     console.log(state)
-    return {...state};
+    return {...state, friends: action.friend};
 
   default:
     return state
