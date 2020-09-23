@@ -4,11 +4,11 @@ export function manageFriends(state, action){
     let newFriends = state.friends.slice()
     newFriends.push(action.friend)
     return {...state, friends: newFriends};
-    switch(action.type){
-      case('REMOVE_FRIEND'):
-      let newFriends = state.friends.slice()
-      newFriends = newFriends.filter((friend) => friend.id !== action.id)
-      console.log(newFriends)
+  switch(action.type){
+    case('REMOVE_FRIEND'):
+    let newFriends = state.friends.slice()
+    newFriends = newFriends.filter((friend) => friend.id !== action.id)
+    console.log(newFriends)
     }
   default:
     return state
