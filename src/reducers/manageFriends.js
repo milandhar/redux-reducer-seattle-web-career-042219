@@ -4,7 +4,10 @@ export function manageFriends(state, action){
     let newFriends = state.friends.slice()
     newFriends.push(action.friend)
     return {...state, friends: newFriends};
+    switch(action.type){
+      case('REMOVE_FRIEND'):
 
+    }
   default:
     return state
   }
