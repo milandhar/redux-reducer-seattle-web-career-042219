@@ -3,7 +3,9 @@ export function manageFriends(state, action){
     case('ADD_FRIEND'):
     console.log(action.friend)
     console.log(state)
-    return {...state, friends: {state.friends, action.friend}};
+    let newFriends = state.friends.slice()
+    newFriends.push(action.friend)
+    return {...state, friends: [state.friends{action.friend}]};
 
   default:
     return state
